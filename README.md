@@ -13,11 +13,11 @@ First, follow the [`craco` Installation Instructions](https://github.com/sharega
 Then install `craco-less`:
 
 ```bash
-$ yarn add -D craco-less
+$ yarn add craco-less
 
 # Or
 
-$ npm i --save-dev craco-less
+$ npm i -S craco-less
 ```
 
 ### Usage
