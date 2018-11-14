@@ -12,7 +12,7 @@ This is a [craco](https://github.com/sharegate/craco) plugin that adds Less supp
 
 If you want to use [Ant Design](https://ant.design/) with `create-react-app`,
 you should use the [`craco-antd`](https://github.com/FormAPI/craco-antd) plugin.
-`craco-antd` includes Less, and `babel-plugin-import` to only include the required CSS. It also makes it easy to customize the theme variables.
+`craco-antd` includes Less and `babel-plugin-import` (to only include the required CSS.) It also makes it easy to customize the theme variables.
 
 ## Supported Versions
 
@@ -30,7 +30,7 @@ Then install `craco-less`:
 ```bash
 $ yarn add craco-less
 
-# Or
+# OR
 
 $ npm i -S craco-less
 ```
@@ -71,6 +71,8 @@ module.exports = {
 
 > [View the less-loader Documentation](https://webpack.js.org/loaders/less-loader/).
 
+## Further Configuration
+
 If you need to configure anything else for the webpack build, take a look at the
 [Configuration Overview section in the `craco` README](https://github.com/sharegate/craco/blob/master/packages/craco/README.md#configuration-overview). You can use `CracoLessPlugin` while making other changes to `babel` and `webpack`, etc.
 
@@ -89,7 +91,7 @@ $ npm install
 Run tests:
 
 ```
-yarn test
+$ yarn test
 ```
 
 Before submitting a pull request, please check the following:
@@ -98,7 +100,7 @@ Before submitting a pull request, please check the following:
   - Run `yarn test`
 - 100% test coverage
   - Coverage will be printed after running tests.
-  - Open the coverage results in your browser: `$ open coverage/lcov-report/index.html`
+  - Open the coverage results in your browser: `open coverage/lcov-report/index.html`
 - All code is formatted with [Prettier](https://prettier.io/)
   - Run `prettier --write **/*.js`
   - If you use VS Code, I recommend enabling the `formatOnSave` option.
