@@ -4,7 +4,7 @@
   "description": "A Less plugin for craco / react-scripts / create-react-app ",
   "main": "lib/craco-less.js",
   "scripts": {
-    "test": "jscs lib/*.js test/*.js && jshint lib/*.js && mocha --reporter=spec test/*-test.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,17 @@
     "url": "https://github.com/FormAPI/craco-less/issues"
   },
   "homepage": "https://github.com/FormAPI/craco-less#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "clone": "^2.1.2",
+    "jest": "^23.6.0"
+  },
   "dependencies": {
-    "@craco/craco": ">= 2.2.3",
-    "react-scripts": ">= 2.1.1",
-    "less": ">= 3.8.1",
-    "less-loader": ">= 4.1.0",
-    "webpack": ">= 4.19.1"
+    "@craco/craco": "^2.2.3",
+    "css-loader": "^1.0.1",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "react-scripts": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.19.1"
   }
 }
