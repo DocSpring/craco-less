@@ -1,9 +1,12 @@
+[![Build Status](https://travis-ci.org/FormAPI/craco-less.svg?branch=master)](https://travis-ci.org/FormAPI/craco-less)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 # Craco Less Plugin
 
 This is a [craco](https://github.com/sharegate/craco) plugin that adds Less support to [create-react-app](https://facebook.github.io/create-react-app/) version >= 2.
 
 > Note: If you want to use [Ant Design](https://ant.design/) with `create-react-app`,
-> you should use the [`craco-antd`](https://github.com/ndbroadbent/craco-antd) plugin.
+> you should use the [`craco-antd`](https://github.com/FormAPI/craco-antd) plugin.
 > This plugin includes Less, and it also sets up `babel-plugin-import` so that you only include the required CSS.
 
 ### Installation

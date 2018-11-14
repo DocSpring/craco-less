@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ndbroadbent/craco-less.git"
+    "url": "git+ssh://git@github.com/FormAPI/craco-less.git"
   },
   "keywords": [
     "craco",
@@ -17,9 +17,9 @@
   "author": "Nathan Broadbent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ndbroadbent/craco-less/issues"
+    "url": "https://github.com/FormAPI/craco-less/issues"
   },
-  "homepage": "https://github.com/ndbroadbent/craco-less#readme",
+  "homepage": "https://github.com/FormAPI/craco-less#readme",
   "devDependencies": {},
   "dependencies": {
     "@craco/craco": ">= 2.2.3",
