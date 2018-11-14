@@ -5,9 +5,20 @@
 
 This is a [craco](https://github.com/sharegate/craco) plugin that adds Less support to [create-react-app](https://facebook.github.io/create-react-app/) version >= 2.
 
-> Note: If you want to use [Ant Design](https://ant.design/) with `create-react-app`,
-> you should use the [`craco-antd`](https://github.com/FormAPI/craco-antd) plugin.
-> `craco-antd` includes Less, sets up `babel-plugin-import` so that you only include the required CSS, and makes it easy to customize the theme variables.
+> Use [react-app-rewired](https://github.com/timarney/react-app-rewired) for `create-react-app` version 1.
+
+### Ant Design
+
+If you want to use [Ant Design](https://ant.design/) with `create-react-app`,
+you should use the [`craco-antd`](https://github.com/FormAPI/craco-antd) plugin.
+`craco-antd` includes Less, and `babel-plugin-import` to only include the required CSS. It also makes it easy to customize the theme variables.
+
+### Supported Versions
+
+`craco-less` is tested with:
+
+- `react-scripts`: `^2.1.1`
+- `@craco/craco`: `^2.2.3`
 
 ### Installation
 
