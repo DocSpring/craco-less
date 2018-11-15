@@ -106,8 +106,6 @@ module.exports = {
 };
 ```
 
-> [View the `css-loader` options](https://webpack.js.org/loaders/style-loader/#options)
-
 #### CSS modules gotcha
 
 There is a known problem with Less and [CSS modules](https://github.com/css-modules/css-modules) regarding relative file paths in `url(...)` statements. [See this issue for an explanation.](https://github.com/webpack-contrib/less-loader/issues/109#issuecomment-253797335)
