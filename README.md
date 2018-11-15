@@ -47,7 +47,20 @@ module.exports = {
 };
 ```
 
-Pass an `options` object to configure the `less-loader` options:
+## Configuration
+
+You can pass an `options` object to configure `style-loader`, `css-loader`, and `less-loader`:
+
+- `options.styleLoaderOptions`
+  - [View the `style-loader` options](https://webpack.js.org/loaders/style-loader/#options)
+- `options.cssLoaderOptions`
+  - [View the `css-loader` options](https://webpack.js.org/loaders/css-loader/#options)
+- `options.lessLoaderOptions`
+  - [View the `less-loader` documentation](https://webpack.js.org/loaders/less-loader/)
+  - [View the Less options](http://lesscss.org/usage/#less-options)
+    - You must use "camelCase" instead of "dash-case", e.g. `--source-map` => `sourceMap`
+
+For example, to configure `less-loader`:
 
 ```js
 const CracoLessPlugin = require("craco-less");
@@ -57,19 +70,49 @@ module.exports = {
     {
       plugin: CracoLessPlugin,
       options: {
-        modifyVars: {
-          "@primary-color": "#1DA57A",
-          "@link-color": "#1DA57A",
-          "@border-radius-base": "2px"
-        },
-        javascriptEnabled: true
+        lessLoaderOptions: {
+          modifyVars: {
+            "@primary-color": "#1DA57A",
+            "@link-color": "#1DA57A",
+            "@border-radius-base": "2px"
+          },
+          javascriptEnabled: true
+        }
       }
     }
   ]
 };
 ```
 
-> [View the less-loader Documentation](https://webpack.js.org/loaders/less-loader/).
+## CSS Modules
+
+You can configure the [`css-loader` options](https://webpack.js.org/loaders/css-loader/#options) to set up CSS modules. For example:
+
+```js
+const CracoLessPlugin = require("craco-less");
+
+module.exports = {
+  plugins: [
+    {
+      plugin: CracoLessPlugin,
+      options: {
+        cssLoaderOptions: {
+          modules: true,
+          localIdentName: "[local]_[hash:base64:5]"
+        }
+      }
+    }
+  ]
+};
+```
+
+> [View the `css-loader` options](https://webpack.js.org/loaders/style-loader/#options)
+
+#### CSS modules gotcha
+
+There is a known problem with Less and [CSS modules](https://github.com/css-modules/css-modules) regarding relative file paths in `url(...)` statements. [See this issue for an explanation.](https://github.com/webpack-contrib/less-loader/issues/109#issuecomment-253797335)
+
+> ([Copied from the less-loader README](https://github.com/webpack-contrib/less-loader#css-modules-gotcha).)
 
 ## Further Configuration
 
