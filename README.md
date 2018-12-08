@@ -49,16 +49,34 @@ module.exports = {
 
 ## Configuration
 
-You can pass an `options` object to configure `style-loader`, `css-loader`, and `less-loader`:
+You can pass an `options` object to configure `style-loader`, `css-loader`, `postcss-loader`, `less-loader`, and `mini-css-extract-plugin` _(production)_. You can also pass a `modifyLessRule` callback to modify the Less webpack rule.
 
 - `options.styleLoaderOptions`
+  - _Default:_ `{}`
   - [View the `style-loader` options](https://webpack.js.org/loaders/style-loader/#options)
 - `options.cssLoaderOptions`
+  - _Default:_ `{ importLoaders: 2 }`
   - [View the `css-loader` options](https://webpack.js.org/loaders/css-loader/#options)
+- `options.postcssLoaderOptions`
+  - _Default:_ `{ ident: "postcss", plugins: () => [ ... ] }`
+  - [View the `postcss-loader` options](https://webpack.js.org/loaders/postcss-loader/#options)
 - `options.lessLoaderOptions`
+  - _Default:_ `{}`
   - [View the `less-loader` documentation](https://webpack.js.org/loaders/less-loader/)
   - [View the Less options](http://lesscss.org/usage/#less-options)
     - You must use "camelCase" instead of "dash-case", e.g. `--source-map` => `sourceMap`
+- `options.miniCssExtractPluginOptions` _(only used in production)_
+  - _Default:_ `{}`
+  - [View the `mini-css-extract-plugin` documentation](https://github.com/webpack-contrib/mini-css-extract-plugin)
+- `options.modifyLessRule(lessRule, context)`
+  - A callback function that receives two arguments: the webpack rule, and the context. You must return an updated rule object.
+    - `lessRule`:
+      - `test`: Regex (default: `/\.less$/`)
+      - `exclude`: Regex (default: `/\.module\.(less)$/`)
+      - `use`: Array of loaders and options.
+    - `context`:
+      - `env`: "development" or "production"
+      - `paths`: An object with paths, e.g. `appBuild`, `appPath`, `ownNodeModules`
 
 For example, to configure `less-loader`:
 
