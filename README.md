@@ -49,7 +49,7 @@ module.exports = {
 
 ## Configuration
 
-You can pass an `options` object to configure `style-loader`, `css-loader`, `postcss-loader`, `less-loader`, and `mini-css-extract-plugin` _(production)_. You can also pass a `modifyLessRule` callback to modify the Less webpack rule.
+You can pass an `options` object to configure the loaders and plugins. You can also pass a `modifyLessRule` callback to have full control over the Less webpack rule.
 
 - `options.styleLoaderOptions`
   - _Default:_ `{}`
