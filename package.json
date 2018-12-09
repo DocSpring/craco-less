@@ -26,7 +26,7 @@
     "jest": "^23.6.0"
   },
   "dependencies": {
-    "@craco/craco": "^2.4.0",
+    "@craco/craco": "^3.2.0",
     "css-loader": "^1.0.1",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
