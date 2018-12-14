@@ -27,11 +27,9 @@
   },
   "dependencies": {
     "@craco/craco": "^3.2.2",
-    "css-loader": "^1.0.1",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "react-scripts": "^2.1.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.0.0"
+    "webpack": "4.19.1"
   }
 }

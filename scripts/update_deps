@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+// Use the same webpack version as react-scripts.
+// This gets rid of the "unmet peer dependency" warning.
+
+// Related issues:
+// * https://github.com/FormAPI/craco-less/issues/3
+// * https://github.com/FormAPI/craco-less/issues/4
+// * https://stackoverflow.com/questions/53681694/how-can-i-resolve-the-webpack-unmet-peer-dependency-warning-for-my-create-reac
+// * https://github.com/yarnpkg/yarn/issues/4850#issuecomment-447277140
+
+const fs = require("fs");
+const { spawnSync } = require("child_process");
+
+const reactScriptsPackageJSON = JSON.parse(
+  fs.readFileSync("node_modules/react-scripts/package.json")
+);
+const webpackVersion = reactScriptsPackageJSON["dependencies"]["webpack"];
+if (!webpackVersion) {
+  throw new Error("Could not find webpack dependency for react-scripts!");
+}
+
+const cracoLessPackageJSON = JSON.parse(fs.readFileSync("package.json"));
+if (cracoLessPackageJSON["dependencies"]["webpack"] == webpackVersion) {
+  console.log(`Webpack dependency is already up-to-date (${webpackVersion})`);
+  process.exit();
+}
+
+console.log(`Updating webpack dependency to: ${webpackVersion}`);
+cracoLessPackageJSON["dependencies"]["webpack"] = webpackVersion;
+fs.writeFileSync(
+  "package.json",
+  JSON.stringify(cracoLessPackageJSON, null, 2) + "\n"
+);
+
+spawnSync("yarn", ["install"], { stdio: "inherit" });
