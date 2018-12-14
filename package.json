@@ -1,7 +1,7 @@
 {
   "name": "craco-less",
   "version": "1.5.1",
-  "description": "A Less plugin for craco / react-scripts / create-react-app ",
+  "description": "A Less plugin for craco / react-scripts / create-react-app",
   "main": "lib/craco-less.js",
   "scripts": {
     "test": "jest",
@@ -52,7 +52,7 @@
       "git add"
     ],
     "*.{js,jsx,ts,tsx}": [
-      "yarn run lint",
+      "eslint --fix",
       "git add"
     ]
   }

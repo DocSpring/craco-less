@@ -161,9 +161,9 @@ Before submitting a pull request, please check the following:
   - Coverage will be printed after running tests.
   - Check the coverage results in your browser: `open coverage/lcov-report/index.html`
 - No ESLint errors
-  - `yarn run lint`
+  - `yarn lint`
 - All code is formatted with [Prettier](https://prettier.io/)
-  - `yarn run format`
+  - `yarn format`
   - If you use VS Code, you should enable the `formatOnSave` option.
 
 ## License
