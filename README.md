@@ -165,6 +165,8 @@ Before submitting a pull request, please check the following:
 - All code is formatted with [Prettier](https://prettier.io/)
   - `yarn format`
   - If you use VS Code, you should enable the `formatOnSave` option.
+- Using the correct webpack version
+  - `./scripts/update_deps`
 
 ## License
 
