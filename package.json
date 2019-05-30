@@ -43,7 +43,7 @@
   },
   "peerDependencies": {
     "@craco/craco": "^5.2.1",
-    "react-scripts": "^2.1.5"
+    "react-scripts": "^3.0.1"
   },
   "husky": {
     "hooks": {
