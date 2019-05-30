@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/FormAPI/craco-less.svg?branch=master)](https://travis-ci.org/FormAPI/craco-less)
-[![Coverage Status](https://coveralls.io/repos/github/FormAPI/craco-less/badge.svg?branch=master)](https://coveralls.io/github/FormAPI/craco-less?branch=master)
+[![Build Status](https://travis-ci.org/DocSpring/craco-less.svg?branch=master)](https://travis-ci.org/DocSpring/craco-less)
+[![Coverage Status](https://coveralls.io/repos/github/DocSpring/craco-less/badge.svg?branch=master)](https://coveralls.io/github/DocSpring/craco-less?branch=master)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 # Craco Less Plugin
