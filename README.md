@@ -18,8 +18,8 @@ you should use the [`craco-antd`](https://github.com/FormAPI/craco-antd) plugin.
 
 `craco-less` is tested with:
 
-- `react-scripts`: `^2.1.2`
-- `@craco/craco`: `^3.2.2`
+- `react-scripts`: `^2.1.5`
+- `@craco/craco`: `^5.2.1`
 
 ## Installation
 
