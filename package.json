@@ -37,8 +37,8 @@
     "react-scripts": "^3.0.1"
   },
   "dependencies": {
-    "less": "^3.8.1",
     "less-loader": "^5.0.0",
+    "less": "^3.9.0",
     "webpack": "4.29.6"
   },
   "peerDependencies": {
