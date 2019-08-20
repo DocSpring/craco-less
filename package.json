@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "less": "^3.8.1",
-    "less-loader": "^4.1.0",
+    "less-loader": "^5.0.0",
     "webpack": "4.29.6"
   },
   "peerDependencies": {
