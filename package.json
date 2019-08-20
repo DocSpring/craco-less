@@ -1,6 +1,6 @@
 {
   "name": "craco-less",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "A Less plugin for craco / react-scripts / create-react-app",
   "main": "lib/craco-less.js",
   "scripts": {
@@ -24,26 +24,26 @@
   },
   "homepage": "https://github.com/FormAPI/craco-less#readme",
   "devDependencies": {
-    "@craco/craco": "^5.2.1",
+    "@craco/craco": "^5.3.0",
     "clone": "^2.1.2",
     "coveralls": "^3.0.2",
     "eslint": "5.6.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.1.3",
-    "jest": "^23.6.0",
+    "jest": "^24.8.0",
     "lint-staged": "^8.0.4",
     "prettier": "^1.15.3",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.1.1"
   },
   "dependencies": {
     "less-loader": "^5.0.0",
     "less": "^3.9.0",
-    "webpack": "4.29.6"
+    "webpack": "4.39.1"
   },
   "peerDependencies": {
-    "@craco/craco": "^5.2.1",
-    "react-scripts": "^3.0.1"
+    "@craco/craco": "^5.3.0",
+    "react-scripts": "^3.1.1"
   },
   "husky": {
     "hooks": {
