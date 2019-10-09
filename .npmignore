@@ -8,3 +8,5 @@ yarn-error.log
 .vscode
 coverage
 lib/*.test.js
+scripts/
+yarn.lock
