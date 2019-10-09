@@ -166,7 +166,8 @@ Before submitting a pull request, please check the following:
   - `yarn format`
   - If you use VS Code, you should enable the `formatOnSave` option.
 - Using the correct webpack version
-  - `./scripts/update_deps`
+  - `yarn update_deps`
+  - NOTE: The `webpack` peerDependency is only needed to silence some annoying warnings from NPM.
 
 ## License
 
