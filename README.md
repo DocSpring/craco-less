@@ -18,8 +18,8 @@ you should use the [`craco-antd`](https://github.com/FormAPI/craco-antd) plugin.
 
 `craco-less` is tested with:
 
-- `react-scripts`: `^2.1.5`
-- `@craco/craco`: `^5.2.1`
+- `react-scripts`: `^3.2.0`
+- `@craco/craco`: `^5.5.0`
 
 ## Installation
 
@@ -172,6 +172,7 @@ Before submitting a pull request, please check the following:
 
 ## Releasing a new version
 
+- Make sure the "Supported Versions" section is updated at the top of the README.
 - Check which files will be included in the NPM package:
   - `npm pack`
   - Update `.npmignore` to exclude any files.
