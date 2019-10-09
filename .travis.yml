@@ -18,4 +18,5 @@ cache:
 
 script:
   - jest --coverage
+  - yarn audit
   - cat ./coverage/lcov.info | coveralls
