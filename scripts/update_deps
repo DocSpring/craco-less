@@ -27,7 +27,7 @@ if (cracoLessPackageJSON["dependencies"]["webpack"] == webpackVersion) {
 }
 
 console.log(`Updating webpack dependency to: ${webpackVersion}`);
-cracoLessPackageJSON["dependencies"]["webpack"] = webpackVersion;
+cracoLessPackageJSON["devDependencies"]["webpack"] = webpackVersion;
 fs.writeFileSync(
   "package.json",
   JSON.stringify(cracoLessPackageJSON, null, 2) + "\n"
