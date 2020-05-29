@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/FormAPI/craco-less#readme",
   "devDependencies": {
-    "@craco/craco": "^5.5.0",
+    "@craco/craco": "^5.6.4",
     "clone": "^2.1.2",
     "coveralls": "^3.0.2",
     "eslint": "6.4.0",
@@ -38,8 +38,8 @@
     "webpack": "4.41.5"
   },
   "dependencies": {
-    "less": "3.10.3",
-    "less-loader": "^5.0.0"
+    "less": "^3.11.1",
+    "less-loader": "^6.1.0"
   },
   "peerDependencies": {
     "@craco/craco": "^5.5.0",
