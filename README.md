@@ -2,6 +2,46 @@
 [![Coverage Status](https://coveralls.io/repos/github/DocSpring/craco-less/badge.svg?branch=master)](https://coveralls.io/github/DocSpring/craco-less?branch=master)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+---
+
+### Community Maintained
+
+We rely on your help to keep this project up to date and work with the latest versions of `craco` and `react-scripts`.
+
+Before you send a PR, please ensure that your changes have:
+
+- 100% test coverage
+
+```
+jest --coverage --testPathIgnorePatterns test-app
+```
+
+- Code is formatted with Prettier
+
+```
+yarn prettier --write "**/*.{js,jsx,json,css,scss,html,md,yml}"
+```
+
+- No ESLint warnings
+
+```
+yarn eslint --fix --ext .js lib/
+```
+
+- No security vulnerabilities in any NPM packages
+
+```
+yarn audit
+```
+
+You are also welcome to add your GitHub username to the [Contributors](#Contributors) section at the bottom of this README. (_optional_)
+
+### Please don't send a pull request if it does not meet the above requirements
+
+Pull requests will be ignored and closed if there is a failing build on Travis CI.
+
+---
+
 # Craco Less Plugin
 
 This is a [craco](https://github.com/sharegate/craco) plugin that adds Less support to [create-react-app](https://facebook.github.io/create-react-app/) version >= 2.
@@ -115,7 +155,7 @@ module.exports = {
       plugin: CracoLessPlugin,
       options: {
         cssLoaderOptions: {
-          modules: {localIdentName: '[local]_[hash:base64:5]'}
+          modules: { localIdentName: "[local]_[hash:base64:5]" }
         }
       }
     }
@@ -181,3 +221,16 @@ Before submitting a pull request, please check the following:
 ## License
 
 [MIT](./LICENSE)
+
+## Contributors
+
+- @ndbroadbent
+- @tux-tn
+- @alexandrtovmach
+- @cemremengu
+- @AO17
+- @Vovan-VE
+- @yifanwangsh
+- @swillis12
+- @nutgaard
+- @alexander-svendsen
