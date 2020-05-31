@@ -4,8 +4,8 @@
 // This gets rid of the "unmet peer dependency" warning.
 
 // Related issues:
-// * https://github.com/FormAPI/craco-less/issues/3
-// * https://github.com/FormAPI/craco-less/issues/4
+// * https://github.com/DocSpring/craco-less/issues/3
+// * https://github.com/DocSpring/craco-less/issues/4
 // * https://stackoverflow.com/questions/53681694/how-can-i-resolve-the-webpack-unmet-peer-dependency-warning-for-my-create-reac
 // * https://github.com/yarnpkg/yarn/issues/4850#issuecomment-447277140
 

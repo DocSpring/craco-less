@@ -51,7 +51,7 @@ This is a [craco](https://github.com/sharegate/craco) plugin that adds Less supp
 ## Ant Design
 
 If you want to use [Ant Design](https://ant.design/) with `create-react-app`,
-you should use the [`craco-antd`](https://github.com/FormAPI/craco-antd) plugin.
+you should use the [`craco-antd`](https://github.com/DocSpring/craco-antd) plugin.
 `craco-antd` includes Less and `babel-plugin-import` (to only include the required CSS.) It also makes it easy to customize the theme variables.
 
 ## Supported Versions
