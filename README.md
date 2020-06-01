@@ -224,13 +224,13 @@ Before submitting a pull request, please check the following:
 
 ## Contributors
 
-- @ndbroadbent
-- @tux-tn
-- @alexandrtovmach
-- @cemremengu
-- @AO17
-- @Vovan-VE
-- @yifanwangsh
-- @swillis12
-- @nutgaard
-- @alexander-svendsen
+- [ndbroadbent](https://github.com/ndbroadbent)
+- [tux-tn](https://github.com/tux-tn)
+- [alexandrtovmach](https://github.com/alexandrtovmach)
+- [cemremengu](https://github.com/cemremengu)
+- [AO17](https://github.com/AO17)
+- [Vovan-VE](https://github.com/Vovan-VE)
+- [yifanwangsh](https://github.com/yifanwangsh)
+- [swillis12](https://github.com/swillis12)
+- [nutgaard](https://github.com/nutgaard)
+- [alexander-svendsen](https://github.com/alexander-svendsen)
