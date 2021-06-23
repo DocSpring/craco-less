@@ -83,7 +83,7 @@ Here is a complete `craco.config.js` configuration file that adds Less compilati
 const CracoLessPlugin = require("craco-less");
 
 module.exports = {
-  plugins: [{ plugin: CracoLessPlugin }]
+  plugins: [{ plugin: CracoLessPlugin }],
 };
 ```
 
@@ -133,14 +133,14 @@ module.exports = {
             modifyVars: {
               "@primary-color": "#1DA57A",
               "@link-color": "#1DA57A",
-              "@border-radius-base": "2px"
+              "@border-radius-base": "2px",
             },
-            javascriptEnabled: true
-          }
-        }
-      }
-    }
-  ]
+            javascriptEnabled: true,
+          },
+        },
+      },
+    },
+  ],
 };
 ```
 
@@ -157,11 +157,11 @@ module.exports = {
       plugin: CracoLessPlugin,
       options: {
         cssLoaderOptions: {
-          modules: { localIdentName: "[local]_[hash:base64:5]" }
-        }
-      }
-    }
-  ]
+          modules: { localIdentName: "[local]_[hash:base64:5]" },
+        },
+      },
+    },
+  ],
 };
 ```
 
@@ -236,3 +236,4 @@ Before submitting a pull request, please check the following:
 - [swillis12](https://github.com/swillis12)
 - [nutgaard](https://github.com/nutgaard)
 - [alexander-svendsen](https://github.com/alexander-svendsen)
+- [sgtsquiggs](https://github.com/sgtsquiggs)
