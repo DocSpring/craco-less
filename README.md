@@ -112,7 +112,7 @@ You can pass an `options` object to configure the loaders and plugins. You can a
   - A callback function that receives two arguments: the webpack rule, and the context. You must return an updated rule object.
     - `lessRule`:
       - `test`: Regex (default: `/\.less$/`)
-      - `exclude`: Regex (default: `/\.module\.(less)$/`)
+      - `exclude`: Regex (default: `/\.module\.less$/`)
       - `use`: Array of loaders and options.
       - `sideEffects`: Boolean (default: same as sass's rule)
     - `context`:
