@@ -114,6 +114,7 @@ You can pass an `options` object to configure the loaders and plugins. You can a
       - `test`: Regex (default: `/\.less$/`)
       - `exclude`: Regex (default: `/\.module\.(less)$/`)
       - `use`: Array of loaders and options.
+      - `sideEffects`: Boolean (default: same as sass's rule)
     - `context`:
       - `env`: "development" or "production"
       - `paths`: An object with paths, e.g. `appBuild`, `appPath`, `ownNodeModules`
