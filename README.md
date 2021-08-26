@@ -89,7 +89,7 @@ module.exports = {
 
 ## Configuration
 
-You can pass an `options` object to configure the loaders and plugins. You can also pass a `modifyLessRule` callback to have full control over the Less webpack rule.
+You can pass an `options` object to configure the loaders and plugins(configure _less_ and _less modules_ at the same time). You can also pass a `modifyLessRule`(or `modifyLessModuleRule`) callback to have full control over the Less webpack rule.
 
 - `options.styleLoaderOptions`
   - _Default:_ `{}`
@@ -115,6 +115,14 @@ You can pass an `options` object to configure the loaders and plugins. You can a
       - `exclude`: Regex (default: `/\.module\.less$/`)
       - `use`: Array of loaders and options.
       - `sideEffects`: Boolean (default: same as sass's rule)
+    - `context`:
+      - `env`: "development" or "production"
+      - `paths`: An object with paths, e.g. `appBuild`, `appPath`, `ownNodeModules`
+- `options.modifyLessModuleRule(lessRule, context)`
+  - A callback function that receives two arguments: the webpack rule, and the context. You must return an updated rule object.
+    - `lessModuleRule`:
+      - `test`: Regex (default: `/\.module\.less$/`)
+      - `use`: Array of loaders and options.
     - `context`:
       - `env`: "development" or "production"
       - `paths`: An object with paths, e.g. `appBuild`, `appPath`, `ownNodeModules`
