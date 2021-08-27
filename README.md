@@ -114,11 +114,11 @@ You can pass an `options` object to configure the loaders and plugins(configure 
       - `test`: Regex (default: `/\.less$/`)
       - `exclude`: Regex (default: `/\.module\.less$/`)
       - `use`: Array of loaders and options.
-      - `sideEffects`: Boolean (default: same as sass's rule)
+      - `sideEffects`: Boolean (default: `true`)
     - `context`:
       - `env`: "development" or "production"
       - `paths`: An object with paths, e.g. `appBuild`, `appPath`, `ownNodeModules`
-- `options.modifyLessModuleRule(lessRule, context)`
+- `options.modifyLessModuleRule(lessModuleRule, context)`
   - A callback function that receives two arguments: the webpack rule, and the context. You must return an updated rule object.
     - `lessModuleRule`:
       - `test`: Regex (default: `/\.module\.less$/`)
@@ -153,20 +153,49 @@ module.exports = {
 };
 ```
 
-## CSS Modules
+## CSS / Less Modules
 
-You can configure the [`css-loader` options](https://webpack.js.org/loaders/css-loader/#options) to set up CSS modules. For example:
+**CSS / Less modules are enabled by default, and the default file suffix for _less modules_ is `.module.less`.**
+
+If your project is using typescript, please append the following code to `./src/react-app-env.d.ts`
+
+```ts
+declare module "*.module.less" {
+  const classes: { readonly [key: string]: string };
+  export default classes;
+}
+```
+
+You can use `modifyLessModuleRule` to configure the file suffix and loaders ([css-loader](https://webpack.js.org/loaders/css-loader/), [less-loader](https://webpack.js.org/loaders/less-loader/) ...) for _less modules_.
+
+For example:
 
 ```js
 const CracoLessPlugin = require("craco-less");
+const { loaderByName } = require("@craco/craco");
 
 module.exports = {
   plugins: [
     {
       plugin: CracoLessPlugin,
       options: {
-        cssLoaderOptions: {
-          modules: { localIdentName: "[local]_[hash:base64:5]" },
+        modifyLessRule(lessRule, context) {
+          // You have to exclude these file suffixes first,
+          // if you want to modify the less module's suffix
+          lessRule.exclude = /\.m\.less$/;
+          return lessRule;
+        },
+        modifyLessModuleRule(lessModuleRule, context) {
+          // Configure the file suffix
+          lessModuleRule.test = /\.m\.less$/;
+
+          // Configure the generated local ident name.
+          const cssLoader = lessModuleRule.use.find(loaderByName("css-loader"));
+          cssLoader.options.modules = {
+            localIdentName: "[local]_[hash:base64:5]",
+          };
+
+          return lessModuleRule;
         },
       },
     },
@@ -246,3 +275,4 @@ Before submitting a pull request, please check the following:
 - [nutgaard](https://github.com/nutgaard)
 - [alexander-svendsen](https://github.com/alexander-svendsen)
 - [sgtsquiggs](https://github.com/sgtsquiggs)
+- [fanck0605](https://github.com/fanck0605)
