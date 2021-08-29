@@ -7,7 +7,6 @@
     "test": "jest --coverage",
     "lint": "eslint --fix \"**/*.{js,ts}\"",
     "format": "prettier --write \"**/*.{js,ts,json,yml,md}\"",
-    "update_deps": "node scripts/update_deps",
     "prepare": "husky install"
   },
   "repository": {
@@ -36,8 +35,7 @@
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1",
     "react-dev-utils": "^11.0.3",
-    "react-scripts": "^4.0.3",
-    "webpack": "4.44.2"
+    "react-scripts": "^4.0.3"
   },
   "dependencies": {
     "less": "^4.1.1",
@@ -54,8 +52,5 @@
     "**/*.{js,ts}": [
       "eslint --fix"
     ]
-  },
-  "resolutions": {
-    "react-scripts/webpack-dev-server": ">=3.11.0"
   }
 }
