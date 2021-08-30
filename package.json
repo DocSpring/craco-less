@@ -4,10 +4,11 @@
   "description": "A Less plugin for craco / react-scripts / create-react-app",
   "main": "lib/craco-less.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint --fix lib",
-    "format": "prettier --write \"**/*.{js,jsx,json,css,scss,html,md,yml}\"",
-    "update_deps": "node scripts/update_deps"
+    "test": "jest --coverage",
+    "lint": "eslint --fix \"**/*.{js,ts}\"",
+    "format": "prettier --write \"**/*.{js,ts,json,yml,md}\"",
+    "update_deps": "node scripts/update_deps",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,7 @@
     "eslint": "7.29.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
-    "husky": "6.0.0",
+    "husky": "7.0.2",
     "jest": "27.0.5",
     "lint-staged": "11.0.0",
     "prettier": "2.3.1",
@@ -46,19 +47,12 @@
     "@craco/craco": "^6.0.0",
     "react-scripts": "^4.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,md}": [
-      "prettier --write",
-      "git add"
+    "**/*.{js,ts,json,yml,md}": [
+      "prettier --write"
     ],
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
+    "**/*.{js,ts}": [
+      "eslint --fix"
     ]
   },
   "resolutions": {
