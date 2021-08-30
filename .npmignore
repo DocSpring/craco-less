@@ -9,7 +9,6 @@ yarn-error.log
 .vscode
 coverage
 lib/*.test.js
-scripts/
 yarn.lock
 craco-less-*.tgz
 .github/pull_request_template.md

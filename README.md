@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DocSpring/craco-less.svg?branch=master)](https://travis-ci.org/DocSpring/craco-less)
+[![Test Status](https://github.com/DocSpring/craco-less/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/DocSpring/craco-less/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/DocSpring/craco-less/badge.svg?branch=master)](https://coveralls.io/github/DocSpring/craco-less?branch=master)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -13,19 +13,19 @@ Before you send a PR, please check the following:
 - 100% test coverage
 
 ```
-jest --coverage --testPathIgnorePatterns test-app
+yarn test
 ```
 
 - Code is formatted with Prettier
 
 ```
-yarn prettier --write "**/*.{js,jsx,json,css,scss,html,md,yml}"
+yarn format
 ```
 
 - No ESLint warnings
 
 ```
-yarn eslint --fix --ext .js lib/
+yarn lint
 ```
 
 - No security vulnerabilities in any NPM packages
