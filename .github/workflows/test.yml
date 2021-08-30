@@ -1,0 +1,29 @@
+name: Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        node-version: [12.x, 14.x, 16.x]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+
+      - run: yarn install --frozen-lockfile
+      - run: npx --no-install eslint "**/*.{js,ts}"
+      - run: npx --no-install prettier --check "**/*.{js,ts,json,yml,md}"
+      - run: npx --no-install jest --ci --coverage
