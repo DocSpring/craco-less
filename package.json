@@ -26,7 +26,6 @@
   "devDependencies": {
     "@craco/craco": "^6.1.2",
     "clone": "^2.1.2",
-    "coveralls": "^3.1.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
