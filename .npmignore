@@ -12,3 +12,4 @@ lib/*.test.js
 yarn.lock
 craco-less-*.tgz
 .github/
+.husky/
