@@ -9,6 +9,7 @@ yarn-error.log
 .vscode
 coverage
 lib/*.test.js
+lib/test-utils.js
 yarn.lock
 craco-less-*.tgz
 .github/
