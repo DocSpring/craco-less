@@ -1,6 +1,6 @@
 {
   "name": "craco-less",
-  "version": "1.20.0",
+  "version": "2.0.0",
   "description": "A Less plugin for craco / react-scripts / create-react-app",
   "main": "lib/craco-less.js",
   "scripts": {
@@ -33,8 +33,8 @@
     "jest": "^27.0.5",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1",
-    "react-dev-utils": "^11.0.3",
-    "react-scripts": "^4.0.3"
+    "react-dev-utils": "^12.0.0",
+    "react-scripts": "^5.0.0"
   },
   "dependencies": {
     "less": "^4.1.1",
@@ -42,7 +42,7 @@
   },
   "peerDependencies": {
     "@craco/craco": "^6.0.0",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "^5.0.0"
   },
   "lint-staged": {
     "**/*.{js,ts,json,yml,md}": [
