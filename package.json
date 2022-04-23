@@ -1,6 +1,6 @@
 {
   "name": "craco-less",
-  "version": "2.0.0",
+  "version": "2.1.0-alpha.0",
   "description": "A Less plugin for craco / react-scripts / create-react-app",
   "main": "lib/craco-less.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/DocSpring/craco-less#readme",
   "devDependencies": {
-    "@craco/craco": "^6.1.2",
+    "@craco/craco": ">7.0.0-alpha",
     "clone": "^2.1.2",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
@@ -41,7 +41,7 @@
     "less-loader": "^7.3.0"
   },
   "peerDependencies": {
-    "@craco/craco": "^6.0.0",
+    "@craco/craco": ">7.0.0-alpha",
     "react-scripts": "^5.0.0"
   },
   "lint-staged": {
