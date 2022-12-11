@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/DocSpring/craco-less#readme",
   "devDependencies": {
-    "@craco/craco": ">7.0.0-alpha",
+    "@craco/craco": "^7.0.0",
     "clone": "^2.1.2",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
@@ -41,7 +41,7 @@
     "less-loader": "^7.3.0"
   },
   "peerDependencies": {
-    "@craco/craco": ">7.0.0-alpha",
+    "@craco/craco": "^7.0.0",
     "react-scripts": "^5.0.0"
   },
   "lint-staged": {
