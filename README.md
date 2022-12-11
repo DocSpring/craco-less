@@ -244,10 +244,6 @@ Before submitting a pull request, please check the following:
 - All code is formatted with [Prettier](https://prettier.io/)
   - `yarn format`
   - If you use VS Code, you should enable the `formatOnSave` option.
-- Using the correct webpack version as a dependency
-  - `yarn update_deps`
-  - NOTE: The `webpack` dependency is needed to silence some annoying warnings from NPM.
-    This must always match the version from `react-scripts`.
 
 ## Releasing a new version
 
