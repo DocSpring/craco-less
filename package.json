@@ -41,7 +41,7 @@
     "less-loader": "^7.3.0"
   },
   "peerDependencies": {
-    "@craco/craco": "^6.0.0",
+    "@craco/craco": "6 - 7",
     "react-scripts": "^5.0.0"
   },
   "lint-staged": {
