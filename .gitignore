@@ -9,7 +9,15 @@
 /dist
 .DS_Store
 coverage
-.idea
-package-lock.json
+/.idea
 /test-results
 craco-less-*.tgz
+
+# Yarn without Zero Install
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

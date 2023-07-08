@@ -44,7 +44,7 @@ Pull requests will be ignored and closed if there is a failing build on Travis C
 
 # Craco Less Plugin
 
-This is a [craco](https://github.com/sharegate/craco) plugin that adds Less support to [create-react-app](https://facebook.github.io/create-react-app/) version >= 2.
+This is a [craco](https://github.com/dilanx/craco) plugin that adds Less support to [create-react-app](https://facebook.github.io/create-react-app/) version >= 2.
 
 > Use [react-app-rewired](https://github.com/timarney/react-app-rewired) for `create-react-app` version 1.
 
@@ -58,8 +58,8 @@ you should use the [`craco-antd`](https://github.com/DocSpring/craco-antd) plugi
 
 `craco-less` is tested with:
 
-- `react-scripts`: `^3.2.0`
-- `@craco/craco`: `^5.5.0`
+- `react-scripts`: `^5.0.1`
+- `@craco/craco`: `^7.1.0`
 
 ## Installation
 
@@ -212,7 +212,7 @@ There is a known problem with Less and [CSS modules](https://github.com/css-modu
 ## Further Configuration
 
 If you need to configure anything else for the webpack build, take a look at the
-[Configuration Overview section in the `craco` README](https://github.com/sharegate/craco/blob/master/packages/craco/README.md#configuration-overview). You can use `CracoLessPlugin` while making other changes to `babel` and `webpack`, etc.
+[Configuration Overview section in the `craco` README](https://github.com/dilanx/craco/blob/master/packages/craco/README.md#configuration-overview). You can use `CracoLessPlugin` while making other changes to `babel` and `webpack`, etc.
 
 ## Contributing
 
@@ -277,3 +277,4 @@ Before submitting a pull request, please check the following:
 - [sgtsquiggs](https://github.com/sgtsquiggs)
 - [fanck0605](https://github.com/fanck0605)
 - [xyy94813](https://github.com/xyy94813)
+- [kamronbatman](https://github.com/kamronbatman)
