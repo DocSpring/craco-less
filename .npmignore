@@ -3,14 +3,14 @@ npm-debug.log
 .eslintrc
 .prettierrc
 .prettierignore
-.travis.yml
 jest.config.js
 yarn-error.log
-.vscode
+.vscode/
+.idea/
 coverage
 lib/*.test.js
 lib/test-utils.js
 yarn.lock
 craco-less-*.tgz
 .github/
-.husky/
+.yarn/
