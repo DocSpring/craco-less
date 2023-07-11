@@ -1,6 +1,6 @@
 {
   "name": "craco-less",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A Less plugin for craco / react-scripts / create-react-app",
   "files": [
     "lib"
