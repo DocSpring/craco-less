@@ -14,3 +14,4 @@ yarn.lock
 craco-less-*.tgz
 .github/
 .yarn/
+.yarnrc.yml
