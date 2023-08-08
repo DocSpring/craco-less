@@ -68,11 +68,11 @@ First, follow the [`craco` Installation Instructions](https://github.com/gsoft-i
 Then install `craco-less`:
 
 ```bash
-$ yarn add craco-less
+$ yarn add -D craco-less
 
 # OR
 
-$ npm i -S craco-less
+$ npm i -D craco-less
 ```
 
 ## Usage
